@@ -1,0 +1,11 @@
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  tags: 
+    - docker
+  environment:
+    name: development 
+#  before_script:
+#    - echo "Start berore script part"
+  script:
+   - echo "Building for development finished"
+
